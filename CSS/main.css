@@ -1,0 +1,191 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+/*Quitarle la decoracion subrayado o iconos a las anclas o hipervinculos, cambiar el cursor*/
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+header {
+    width: 100%;
+    height: 60px;
+}
+
+header nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/*Justificar el nav */
+header nav .nav-right-section {
+    width: 250px;
+    height: auto;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+/* Separar los botones (hipervinculos) */
+nav .nav-right-section a {
+    margin-right: 10px;
+    color: #000000;
+}
+
+nav .nav-right-section .menu-icon {
+    background-image: url('https://static.thenounproject.com/png/756729-200.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 25px;
+    height: 25px;
+}
+
+/*ubicar la imagen del usuario a la derecha*/
+nav .nav-right-section img {
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+main {
+    margin-top: 50px; 
+    text-align: center;
+}
+
+main .main-logo {
+    width: 530px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+main .main-logo img {
+    width: 300px;
+    height: 300px;
+}
+
+/*Da espacio entre los botones y el imput*/
+
+main .main-input {
+    width: 530px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+}
+main .main-input-container {
+    width: 525px;
+    /*Pone redondo los bordes del input*/
+    border-radius: 100px;
+    /*Delinea el borde del input de color fris*/
+    border: 1px solid #dfe1e5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Poner el input del tamaño del contenedor, quitar el marco azul cuando se selecciona*/
+main .main-input input {
+    width: 450px;
+    height: 40px;
+    border: none;
+    outline: none;
+}
+
+/*Se agrega pseudo elemento hober, cuando pases el mouse por encima haz lo siguiente*/
+main .main-input-container:hover {
+    box-shadow: 0 1px 6px 0 #20212447;
+    border-color: #dfe1e500;
+}
+
+main .main-input .search-icon {
+    background-image: url('https://icones.pro/wp-content/uploads/2021/02/loupe-et-icone-de-recherche-de-couleur-verte.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 22px;
+    height: 22px;
+
+    /*background-repeat: no-repeat para evitar que el navegador repita la imagen por rellenar espacio.
+      background-position: center para centrarlo.
+      background-size: contain para que tome el tamaño del contenedor padre.*/
+}
+
+main .main-input .micro-icon {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/726px-Google_mic.svg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+main .main-buttons {
+    width: 530px;
+    margin: 0 auto;
+}
+
+/*Poner un poner uno al lado del otro*/
+main .main-buttons div {
+    display: inline-block;
+}
+
+/*Estilo en los botones*/
+main .main-buttons button {
+    height: 36px;
+    background-color: #b7e0c2;
+    border: 0;
+    font-size: 14px;
+    color: #5f6368;
+    border-radius: 5px;
+    padding: 0 15px;
+    margin-right: 15px;
+    font-weight: bold;
+}
+
+/*Sombra en los botones*/
+main .main-buttons button:hover {
+    border: 1px solid #c6c6c6;
+    box-shadow: 0 1px 1px #000001;
+    color: #222;
+}
+
+footer {
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    display: grid;
+    /*Le da dos contenedores al footer o cuantas columnas quieras con 1rf*/
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    font-size: 13px;
+    background-color: #f2f2f2;
+    border-top: 1px solid #e4e4e4;
+}
+
+/*Le quita el estilo por defecto a las etiquetas*/
+footer ul {
+    margin: 10px;
+    list-style: none;
+    display: flex;
+    padding-left: 0;
+}
+
+/*Se ajusta cada parte del footer a su lugar*/
+footer .footer-left {
+    justify-self: left;
+
+}    
+    
+footer .footer-right {
+    justify-self: right;
+
+}
+
+footer ul li a {
+    margin: 10px;
+    color: #5f6368;
+}
